@@ -3,6 +3,7 @@ import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import NavBar from './NavBar.js'
 
 import CryptocurrencyContainer from './containers/cryptocurrencies/CryptocurrencyContainer.js'
+import ExchangeContainer from './containers/exchanges/ExchangeContainer.js'
 
 class App extends Component {
 
@@ -13,6 +14,9 @@ class App extends Component {
           <NavBar />
           <Switch>
             <Route exact path = '/cryptocurrencies' component={CryptocurrencyContainer}/>
+
+            <Route exact path = '/exchanges' component={ExchangeContainer}/>
+
         </Switch>
       </React.Fragment>
     </Router>
