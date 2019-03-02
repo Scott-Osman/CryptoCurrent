@@ -3,6 +3,7 @@ import CryptocurrencyList from '../../components/cryptocurrencies/Cryptocurrency
 import axios from 'axios';
 
 class CryptocurrencyContainer extends Component{
+
   constructor(props){
     super(props);
     this.state = {
@@ -11,9 +12,11 @@ class CryptocurrencyContainer extends Component{
   }
 
   componentDidMount(){
-    axios.get('https://min-api.cryptocompare.com/data/all/coinlist').then(res => {
-      console.log(res.data.Data);
-      this.setState({cryptocurrencies: res.data.Data})
+    axios.get('https://min-api.cryptocompare.com/data/all/coinlist').then((response) => {
+      console.log(response.data.Data)
+      const cryptocurrencies = (Object.values(response.data.Data));
+      console.log(cryptocurrencies);
+      this.setState({cryptocurrencies: cryptocurrencies})
     })
   }
 
