@@ -9,7 +9,7 @@ const HistoricalList = (props) => {
   })
 
   return(
-    <ul className="component-list">
+    <ul className="historical-component-list">
       {historicals}
     </ul>
   )

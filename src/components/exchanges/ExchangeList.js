@@ -9,7 +9,7 @@ const ExchangeList = (props) => {
   })
 
   return(
-    <ul className="component-list">
+    <ul className="exchange-component-list">
       {exchanges}
     </ul>
   )

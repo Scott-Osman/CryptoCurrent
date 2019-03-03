@@ -7,12 +7,13 @@ const Cryptocurrency = (props) => {
   }
 
   return (
-    <div className="component">
+    <tr className="cryptocurrency-component">
       <Link to={"/cryptocurrencies/" + props.cryptocurrency.Id}>
-      <p>Position: {props.cryptocurrency.SortOrder}</p> <p>Ticker: {props.cryptocurrency.Name}</p>
+      <td>{props.cryptocurrency.SortOrder}</td>
+      <td>{props.cryptocurrency.Name}</td>
+      <td>{props.cryptocurrency.CoinName}</td>
     </Link>
-    <p>Name: {props.cryptocurrency.CoinName}</p>
-  </div>
+  </tr>
 )
 
 }

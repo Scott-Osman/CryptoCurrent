@@ -7,7 +7,7 @@ const Exchange = (props) => {
   }
 
   return (
-    <div className="component">
+    <div className="exchange-component">
         <Link to={"/exchanges/" + props.exchange}>
         {props.exchange}
       </Link>
