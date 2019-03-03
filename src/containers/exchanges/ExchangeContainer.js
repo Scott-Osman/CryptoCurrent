@@ -13,9 +13,8 @@ class ExchangeContainer extends Component{
 
   componentDidMount(){
     axios.get('https://min-api.cryptocompare.com/data/v2/all/exchanges').then((response) => {
-      const exchangeObjects = response.data.Data
-      console.log(exchangeObjects)
-      const exchanges = (Object.keys(exchangeObjects));
+      console.log(response);
+      const exchanges = (Object.keys(response.data.Data));
       console.log(exchanges);
       this.setState({exchanges: exchanges})
     })
