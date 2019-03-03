@@ -22,8 +22,8 @@ class ExchangeContainer extends Component{
 
   render(){
     return(
-      <div>
-        <h1>Exchanges:</h1>
+      <div className="exchange-component-container">
+        <h1>Exchanges</h1>
         <ExchangeList exchanges = {this.state.exchanges}/>
       </div>
     )

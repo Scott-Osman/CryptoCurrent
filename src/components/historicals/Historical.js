@@ -6,7 +6,7 @@ const Historical = (props) => {
   }
 
   return (
-    <div className="component">
+    <div className="historical-component">
       <p>Time: {props.historical.time}</p>
       <p>Close: {props.historical.close}</p>
     </div>

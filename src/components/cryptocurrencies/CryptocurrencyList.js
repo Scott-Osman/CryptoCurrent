@@ -4,14 +4,14 @@ import Cryptocurrency from './Cryptocurrency.js'
 const CryptocurrencyList = (props) => {
 
   const cryptocurrencies = props.cryptocurrencies.map((cryptocurrency) => {
-    return(<li key={cryptocurrency.Id} className='component-item'>
-      <Cryptocurrency cryptocurrency={cryptocurrency}/></li>)
+    return(<tr key={cryptocurrency.Id} className='component-item'>
+      <Cryptocurrency cryptocurrency={cryptocurrency}/></tr>)
   });
 
   return(
-    <ul className="component-list">
+    <tr className="cryptocurrency-component-list">
       {cryptocurrencies}
-    </ul>
+  </tr>
   )
 
 }

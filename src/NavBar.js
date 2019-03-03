@@ -7,7 +7,7 @@ const NavBar = (props) => {
     <div className="navbar">
 
       <header className="app-header">
-        <h1>Crypto Current</h1>
+        <h1>CryptoCurrent</h1>
 
         <div className="navbar-links">
 
