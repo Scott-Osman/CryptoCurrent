@@ -18,6 +18,10 @@ const NavBar = (props) => {
         </li>
 
         <li className="navLink">
+          <Link to="/historical">Historical</Link>
+        </li>
+
+        <li className="navLink">
           <Link to="/cryptocurrencies">Cryptocurrencies</Link>
         </li>
 
