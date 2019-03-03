@@ -12,15 +12,19 @@ const NavBar = (props) => {
 
       <div className="navbar-links">
 
-        <span className="navLink">
-          <Link to="/cryptocurrencies">Cryptocurrencies</Link>
-        </span>
+        <ul>
+        <li className="navLink">
+          <Link to="/live">Live</Link>
+        </li>
 
-        <br/>
-        
-        <span className="navLink">
+        <li className="navLink">
+          <Link to="/cryptocurrencies">Cryptocurrencies</Link>
+        </li>
+
+        <li className="navLink">
           <Link to="/exchanges">Exchanges</Link>
-        </span>
+        </li>
+      </ul>
 
       </div>
 
