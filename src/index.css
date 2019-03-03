@@ -1,3 +1,4 @@
+/* Body */
 body {
   margin: 0;
   padding: 0;
@@ -8,7 +9,45 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Code */
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+/* NavBar */
+.navbar {
+  margin-bottom: 150px;
+}
+
+/* Header */
+.app-header {
+  background-color: #30b1ce;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+.app-header * {
+  display: inline;
+}
+
+.app-header li {
+  margin: 20px;
+}
+
+.app-header h1 {
+  color: white;
+}
+
+.app-header a {
+  color: white;
+}
+
+/* Cryptocurrency Container */
+.cryptocurrency-container h1 {
+  display: inline;
 }
