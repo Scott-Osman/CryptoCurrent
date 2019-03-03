@@ -25,7 +25,7 @@ class CryptocurrencyContainer extends Component{
 
   render(){
     return(
-      <div>
+      <div className="cryptocurrency-container">
         <h1>Position: </h1>
         <h1>Ticker: </h1>
         <h1>Name: </h1>

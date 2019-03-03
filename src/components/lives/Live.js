@@ -11,12 +11,12 @@ const Live = (props) => {
     <div className="component">
 
       <div id = "live-cryptocurrency-container">
-        <Link to={"/lives/" + props.live}>
-        {props.live}
+        <Link to={"/lives/" + props.live[0]}>
+        {props.live[0]}
       </Link>
-      <span className="left">{props.live}</span>
+      <span className="left">{props.live[0]}</span>
       <span className="right">
-        <NumberFormat value={props.live.USD} displayType={'text'} decimalPrecision={2} thousandSeperator={true} prefix={'$'}/>
+        <NumberFormat value={props.live[1].USD} displayType={'text'} decimalPrecision={2} thousandSeperator={true} prefix={'$'}/>
       </span>
     </div>
   </div>

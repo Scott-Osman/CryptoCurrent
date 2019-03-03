@@ -8,29 +8,30 @@ const NavBar = (props) => {
 
       <header className="app-header">
         <h1>Crypto Current</h1>
+
+        <div className="navbar-links">
+
+          <ul>
+            <li className="navLink">
+              <Link to="/live">Live</Link>
+            </li>
+
+            <li className="navLink">
+              <Link to="/historical">Historical</Link>
+            </li>
+
+            <li className="navLink">
+              <Link to="/cryptocurrencies">Cryptocurrencies</Link>
+            </li>
+
+            <li className="navLink">
+              <Link to="/exchanges">Exchanges</Link>
+            </li>
+
+          </ul>
+        </div>
       </header>
 
-      <div className="navbar-links">
-
-        <ul>
-        <li className="navLink">
-          <Link to="/live">Live</Link>
-        </li>
-
-        <li className="navLink">
-          <Link to="/historical">Historical</Link>
-        </li>
-
-        <li className="navLink">
-          <Link to="/cryptocurrencies">Cryptocurrencies</Link>
-        </li>
-
-        <li className="navLink">
-          <Link to="/exchanges">Exchanges</Link>
-        </li>
-      </ul>
-
-      </div>
 
 
     </div>

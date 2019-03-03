@@ -15,7 +15,7 @@ class LiveContainer extends Component{
   componentDidMount(){
     axios.get('https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC,ETH,LTC&tsyms=USD').then((response) => {
       console.log(response);
-      const cryptocurrencies = (Object.values(response.data));
+      const cryptocurrencies = (Object.entries(response.data));
       console.log(cryptocurrencies);
       this.setState({lives: cryptocurrencies});
     })
