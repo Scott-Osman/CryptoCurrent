@@ -4,15 +4,15 @@ import Exchange from './Exchange.js'
 const ExchangeList = (props) => {
 
   const exchanges = props.exchanges.map((exchange) => {
-    return (<li key={exchange.id} className='component-item'><Exchange exchange={exchange}/>
-  </li>)
-})
+    return(<li key={exchange} className='component-item'>
+      <Exchange exchange={exchange}/></li>)
+  })
 
-return(
-  <ul className="component-list">
-    {exchanges}
-  </ul>
-)
+  return(
+    <ul className="component-list">
+      {exchanges}
+    </ul>
+  )
 
 }
 

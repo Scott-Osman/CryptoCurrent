@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
-import CryptocurrencyList from '../../components/cryptocurrencies/CryptocurrencyList.js'
 import axios from 'axios';
+
+import CryptocurrencyList from '../../components/cryptocurrencies/CryptocurrencyList.js'
 
 class CryptocurrencyContainer extends Component{
 
@@ -22,7 +23,12 @@ class CryptocurrencyContainer extends Component{
 
   render(){
     return(
-      <CryptocurrencyList cryptocurrencies = {this.state.cryptocurrencies}/>
+      <div>
+        <h1>Position: </h1>
+        <h1>Ticker: </h1>
+        <h1>Name: </h1>
+        <CryptocurrencyList cryptocurrencies = {this.state.cryptocurrencies}/>
+      </div>
     )
   }
 

@@ -9,10 +9,12 @@ const Cryptocurrency = (props) => {
   return (
     <div className="component">
       <Link to={"/cryptocurrencies/" + props.cryptocurrency.Id}>
-      {props.cryptocurrency.SortOrder} {props.cryptocurrency.Name}</Link>
-      <p>{props.cryptocurrency.CoinName}</p>
-    </div>
-  )
+      <p>Position: {props.cryptocurrency.SortOrder}</p> <p>Ticker: {props.cryptocurrency.Name}</p>
+    </Link>
+    <p>Name: {props.cryptocurrency.CoinName}</p>
+  </div>
+)
+
 }
 
 export default Cryptocurrency;

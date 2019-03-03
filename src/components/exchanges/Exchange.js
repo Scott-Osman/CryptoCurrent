@@ -8,11 +8,11 @@ const Exchange = (props) => {
 
   return (
     <div className="component">
-      <Link to={"/exchanges/" + props.exchange.Id}>
-      {props.exchange.Name}</Link>
-      <p>{props.exchange.Url}</p>
-    </div>
-  )
+        <Link to={"/exchanges/" + props.exchange}>
+        {props.exchange}
+      </Link>
+  </div>
+)
 }
 
 export default Exchange;

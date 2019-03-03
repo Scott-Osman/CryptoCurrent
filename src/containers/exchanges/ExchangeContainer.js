@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
-import ExchangeList from '../../components/exchanges/ExchangeList.js'
 import axios from 'axios';
+
+import ExchangeList from '../../components/exchanges/ExchangeList.js'
 
 class ExchangeContainer extends Component{
   constructor(props){
@@ -12,8 +13,9 @@ class ExchangeContainer extends Component{
 
   componentDidMount(){
     axios.get('https://min-api.cryptocompare.com/data/v2/all/exchanges').then((response) => {
-      console.log(response.data.Data)
-      const exchanges = (Object.values(response.data.Data));
+      const exchangeObjects = response.data.Data
+      console.log(exchangeObjects)
+      const exchanges = (Object.keys(exchangeObjects));
       console.log(exchanges);
       this.setState({exchanges: exchanges})
     })
@@ -21,12 +23,13 @@ class ExchangeContainer extends Component{
 
   render(){
     return(
-      <ExchangeList exchanges = {this.state.exchanges}/>
+      <div>
+        <h1>Exchanges:</h1>
+        <ExchangeList exchanges = {this.state.exchanges}/>
+      </div>
     )
   }
 
-
 }
-
 
 export default ExchangeContainer;
