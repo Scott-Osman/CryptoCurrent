@@ -6,7 +6,7 @@ const CryptocurrencyList = (props) => {
   const cryptocurrencies = props.cryptocurrencies.map((cryptocurrency) => {
     return(<li key={cryptocurrency.Id} className='component-item'>
       <Cryptocurrency cryptocurrency={cryptocurrency}/></li>)
-  })
+  });
 
   return(
     <ul className="component-list">
