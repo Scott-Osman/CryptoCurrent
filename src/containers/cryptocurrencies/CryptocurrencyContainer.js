@@ -15,7 +15,9 @@ class CryptocurrencyContainer extends Component{
   componentDidMount(){
     axios.get('https://min-api.cryptocompare.com/data/all/coinlist').then((response) => {
       console.log(response)
-      const cryptocurrencies = (Object.values(response.data.Data));
+      const cryptocurrencies = (Object.values(response.data.Data).sort((a, b) =>
+        parseFloat(a.SortOrder) - parseFloat(b.SortOrder)
+      ));
       console.log(cryptocurrencies);
       this.setState({cryptocurrencies: cryptocurrencies})
     })
