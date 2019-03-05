@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
+import {Table} from 'react-bootstrap';
 import axios from 'axios';
-
-import {BootstrapTable, TableHeaderColumn} from 'react-bootstrap-table';
 
 import CryptocurrencyList from '../../components/cryptocurrencies/CryptocurrencyList.js'
 
@@ -27,16 +26,18 @@ class CryptocurrencyContainer extends Component{
 
 render(){
   return(
-    <BootstrapTable className="cryptocurrency-component-container" data={this.state.cryptocurrencies} keyField='position' striped bordered hover>
-      <TableHeaderColumn dataField='Position'>Position</TableHeaderColumn>
-      <TableHeaderColumn dataField='Ticker'>Ticker</TableHeaderColumn>
-      <TableHeaderColumn dataField='Name'>Name</TableHeaderColumn>
-      <tbody>
+    <div className="top-div">
+    <Table striped bordered hover variant="dark">
+      <thead>
+        <tr>
+          <th>Position</th>
+          <th>Name</th>
+          <th>Coin Name</th>
+        </tr>
+      </thead>
         <CryptocurrencyList cryptocurrencies = {this.state.cryptocurrencies}/>
-      </tbody>
-
-    </BootstrapTable>
-
+    </Table>
+  </div>
   )
 }
 

@@ -22,7 +22,7 @@ class HistoricalContainer extends Component{
 
   render(){
     return(
-      <div className="historical-component-container">
+      <div className="top-div">
         <h1>Historical Price Data (BTC per Minute)</h1>
         <HistoricalList historicals = {this.state.historicals}/>
       </div>
