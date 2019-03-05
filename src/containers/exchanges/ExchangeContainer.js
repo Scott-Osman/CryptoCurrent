@@ -22,7 +22,7 @@ class ExchangeContainer extends Component{
 
   render(){
     return(
-      <div className="exchange-component-container">
+      <div className="top-div">
         <h1>Exchanges</h1>
         <ExchangeList exchanges = {this.state.exchanges}/>
       </div>
