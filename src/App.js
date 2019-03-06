@@ -61,8 +61,6 @@ class App extends Component {
 
             <Route exact path = '/test' component = {TestContainer}/>
 
-            <Route exact path = '/live' component = {LivesContainer}/>
-
 
           </Switch>
 

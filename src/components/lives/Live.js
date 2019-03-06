@@ -5,7 +5,7 @@ import  Chart  from  'eon-react';
 class Live extends Component {
   constructor(props){
     super(props);
-    this.pubnub = this.pubnub = new PubNubReact({
+    this.pubnub = new PubNubReact({
       subscribeKey: 'sub-c-ed699f16-3bf4-11e9-b221-7a660e69c40f'
     });
     this.pubnub.subscribe({
@@ -18,7 +18,7 @@ class Live extends Component {
     return(
       <Chart
         channels = {['coin-feed']}
-        history = {true}
+        history = {false}
         flow = {true}
         limit = {15}
         pubnub = {this.pubnub}

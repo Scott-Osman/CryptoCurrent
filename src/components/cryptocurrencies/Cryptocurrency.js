@@ -13,7 +13,7 @@ const Cryptocurrency = (props) => {
       <td className="cryptocurrency-container-component">{props.cryptocurrency.SortOrder}</td>
 
       <td className="cryptocurrency-container-component">
-        <img src={`https://www.cryptocompare.com/${props.cryptocurrency.ImageUrl}`} />
+        <img alt="" src={`https://www.cryptocompare.com/${props.cryptocurrency.ImageUrl}`} />
       </td>
 
       <td className="cryptocurrency-container-component"><Link to={"/cryptocurrencies/" + props.cryptocurrency.Name}>{props.cryptocurrency.Name}</Link></td>
