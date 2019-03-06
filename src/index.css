@@ -111,3 +111,8 @@ span.left {
 span.right {
   float: right;
 }
+
+.cryptocurrency-table tbody tr td img{
+  width:35px;
+  height:35px;
+}
