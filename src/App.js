@@ -2,11 +2,14 @@ import React, { Component } from 'react';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import NavBar from './NavBar.js'
 
-import HistoricalContainer from './containers/historicals/HistoricalContainer.js'
 import CryptocurrencyContainer from './containers/cryptocurrencies/CryptocurrencyContainer.js'
+import SingleCryptocurrencyContainer from './containers/cryptocurrencies/SingleCryptocurrencyContainer.js'
+import SingleCryptocurrencyHistoricalContainer from './containers/cryptocurrencies/SingleCryptocurrencyHistoricalContainer.js'
+
 import ExchangeContainer from './containers/exchanges/ExchangeContainer.js'
 
-import SingleCryptocurrencyContainer from './containers/cryptocurrencies/SingleCryptocurrencyContainer.js'
+import NewsContainer from './containers/news/NewsContainer.js'
+import NewsSourcesContainer from './containers/news/NewsSourcesContainer.js'
 
 import TestContainer from './containers/tests/TestContainer.js'
 
@@ -19,18 +22,25 @@ class App extends Component {
           <NavBar />
           <Switch>
 
-            <Route exact path = '/historical' component = {HistoricalContainer}/>
-
             <Route exact path = '/cryptocurrencies' component = {CryptocurrencyContainer}/>
-
-            <Route exact path = '/exchanges' component = {ExchangeContainer}/>
-
-            <Route exact path = '/test' component = {TestContainer}/>
 
             <Route exact path='/cryptocurrencies/:id' render={(props) => {
               const id = props.match.params.id;
               return <SingleCryptocurrencyContainer id={id}/>
             }}/>
+
+            <Route exact path='/cryptocurrencies/:id/historical' render={(props) => {
+              const id = props.match.params.id;
+              return <SingleCryptocurrencyHistoricalContainer id={id}/>
+            }}/>
+
+            <Route exact path = '/exchanges' component = {ExchangeContainer}/>
+
+            <Route exact path = '/news' component = {NewsContainer}/>
+
+            <Route exact path = '/news/sources' component = {NewsSourcesContainer}/>
+
+            <Route exact path = '/test' component = {TestContainer}/>
 
           </Switch>
         </React.Fragment>
