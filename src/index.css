@@ -18,24 +18,49 @@ body {
   margin-top: 60px;
 }
 
+  /* App Header */
 
-/* Header */
+  .app-header * {
+    display: inline;
+  }
 
-.app-header * {
-  display: inline;
+  .app-header li {
+    margin: 20px;
+  }
+
+  .app-header h1 {
+    color: white;
+  }
+
+  .app-header a {
+    color: white;
+  }
+
+/* Footer */
+.footer {
+  background-color: #30b1ce;
+  height: 60px;
+  width: 100%;
+  bottom: 0;
+  position: fixed;
 }
 
-.app-header li {
-  margin: 20px;
-}
+  /* App Header */
+  .app-footer * {
+    display: inline;
+  }
 
-.app-header h1 {
-  color: white;
-}
+  .app-footer li {
+    margin: 20px;
+  }
 
-.app-header a {
-  color: white;
-}
+  .app-footer h1 {
+    color: white;
+  }
+
+  .app-footer a {
+    color: white;
+  }
 
 
 /* Cryptocurrency Container */
