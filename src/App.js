@@ -6,6 +6,8 @@ import NavBar from './NavBar.js'
 import MainContainer from './containers/mains/MainContainer.js'
 import AboutContainer from './containers/mains/AboutContainer.js'
 
+import LivesContainer from './containers/lives/LivesContainer.js'
+
 import CryptocurrencyContainer from './containers/cryptocurrencies/CryptocurrencyContainer.js'
 import SingleCryptocurrencyContainer from './containers/cryptocurrencies/SingleCryptocurrencyContainer.js'
 import SingleCryptocurrencyHistoricalContainer from './containers/cryptocurrencies/SingleCryptocurrencyHistoricalContainer.js'
@@ -46,6 +48,11 @@ class App extends Component {
               return <SingleCryptocurrencyHistoricalContainer id={id}/>
             }}/>
 
+            <Route exact path='/cryptocurrencies/:id/live' render={(props) => {
+              const id = props.match.params.id;
+              return <LivesContainer id={id}/>
+            }}/>
+
             <Route exact path = '/exchanges' component = {ExchangeContainer}/>
 
             <Route exact path = '/news' component = {NewsContainer}/>
@@ -53,6 +60,9 @@ class App extends Component {
             <Route exact path = '/news/sources' component = {NewsSourcesContainer}/>
 
             <Route exact path = '/test' component = {TestContainer}/>
+
+            <Route exact path = '/live' component = {LivesContainer}/>
+
 
           </Switch>
 

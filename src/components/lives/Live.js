@@ -2,14 +2,14 @@ import React, {Component} from 'react';
 import  PubNubReact  from  'pubnub-react';
 import  Chart  from  'eon-react';
 
-class Test extends Component {
+class Live extends Component {
   constructor(props){
     super(props);
     this.pubnub = this.pubnub = new PubNubReact({
       subscribeKey: 'sub-c-ed699f16-3bf4-11e9-b221-7a660e69c40f'
     });
     this.pubnub.subscribe({
-    channel: ['bitcoin-feed'],
+    channel: ['coin-feed'],
 });
     this.pubnub.init(this);
   }
@@ -17,7 +17,7 @@ class Test extends Component {
   render() {
     return(
       <Chart
-        channels = {['bitcoin-feed']}
+        channels = {['coin-feed']}
         history = {true}
         flow = {true}
         limit = {15}
@@ -32,4 +32,4 @@ class Test extends Component {
   }
 }
 
-export default Test;
+export default Live;

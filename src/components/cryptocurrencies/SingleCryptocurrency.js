@@ -10,6 +10,7 @@ const SingleCryptocurrency = (props) => {
   return (
     <div>
       <Link to={"/cryptocurrencies/" + props.id + "/historical"}><p>Historical Price Data</p></Link>
+      <Link to={"/cryptocurrencies/" + props.id + "/live"}><p>Live Price Data</p></Link>
       <p>Symbol: {props.cryptocurrency.FROMSYMBOL}</p>
       <p>Ticker: {props.id}</p>
       <p>Price: {props.cryptocurrency.PRICE}</p>

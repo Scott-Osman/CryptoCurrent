@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
 import  PubNubReact  from  'pubnub-react';
 
-import Test from '../../components/tests/Test.js'
+import Live from '../../components/lives/Live.js'
 
-class TestContainer extends Component {
+class LiveContainer extends Component {
   constructor(props){
     super(props);
     this.pubnub = new PubNubReact({
@@ -15,31 +15,33 @@ class TestContainer extends Component {
 
   componentDidMount(){
     setInterval(() => {
-      fetch('https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC,ETH,LTC&tsyms=USD')
+      const url = 'https://min-api.cryptocompare.com/data/price?fsym=' + this.props.id + '&tsyms=USD'
+      fetch(url)
       .then(res => res.json())
       .then(data => {
+        console.log(data);
         this.pubnub.publish({
-          channel: 'bitcoin-feed',
+          channel: 'coin-feed',
           message: {
             eon: {
-              'BitCoin': data.BTC.USD.toFixed(2)
+              'Coin': data.USD.toFixed(2)
             }
           }
         })
       })
     }
-      , 5000)
-    }
-
-    render() {
-      return(
-        <div className="top-div">
-          <div className="test-container">
-            <Test pubNub = {this.pubnub}/>
-          </div>
-        </div>
-      );
-    }
+    , 5000)
   }
 
-  export default TestContainer;
+  render() {
+    return(
+      <div className="top-div">
+        <div className="live-container">
+          <Live pubNub = {this.pubnub}/>
+        </div>
+      </div>
+    );
+  }
+}
+
+export default LiveContainer;
