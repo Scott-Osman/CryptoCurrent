@@ -11,9 +11,10 @@ const New = (props) => {
       <Link to={props.item.url}>
         {props.item.title}
       </Link>
+      <p><img src={props.item.imageurl} alt=""/></p>
       <p>{props.item.body}</p>
-      <p>Language: {props.item.lang}</p>
-      <p>Tags: {props.item.tags}</p>
+      <p>{props.item.source} {props.item.lang}</p>
+      <p>{props.item.tags}</p>
     </div>
   )
 }

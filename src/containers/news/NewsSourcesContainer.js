@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import axios from 'axios';
+import {Link} from 'react-router-dom';
 
 import NewsSourcesList from '../../components/news/NewsSourcesList.js'
 
@@ -25,6 +26,7 @@ class NewsSourcesContainer extends Component{
   render(){
     return(
       <div className="top-div">
+        <Link to={"/news"}><p>News</p></Link>
         <NewsSourcesList newsSources = {this.state.news}/>
       </div>
     )
