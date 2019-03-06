@@ -19,7 +19,7 @@ class TestContainer extends Component {
       .then(res => res.json())
       .then(data => {
         this.pubnub.publish({
-          channels: ['bitcoin-feed'],
+          channel: 'bitcoin-feed',
           message: {
             eon: {
               'BitCoin': data.BTC.USD.toFixed(2)
@@ -34,7 +34,7 @@ class TestContainer extends Component {
     render() {
       return(
         <div className="top-div">
-          <Test test = {this.pubnub.test}/>
+          <Test pubNub = {this.pubnub}/>
         </div>
       );
     }
