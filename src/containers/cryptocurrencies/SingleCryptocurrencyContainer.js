@@ -13,18 +13,17 @@ class SingleCryptocurrencyContainer extends Component{
   }
 
   componentDidMount(){
-    const url = 'https://min-api.cryptocompare.com/data/pricemultifull?fsyms=' + this.props.id + '&tsyms=USD'
-    axios.get(url)
+    const url1 = 'https://min-api.cryptocompare.com/data/pricemultifull?fsyms=' + this.props.id + '&tsyms=USD'
+    axios.get(url1)
     .then((response) => {
       console.log(response)
       const cryptocurrency = response.data.DISPLAY;
       console.log(cryptocurrency);
-      this.extractData(cryptocurrency);
-
+      this.extractCryptocurrencyData(cryptocurrency);
     })
   }
 
-  extractData(cryptocurrency){
+  extractCryptocurrencyData(cryptocurrency){
     const type = this.props.id;
     console.log(cryptocurrency[type].USD);
     this.setState({cryptocurrency: cryptocurrency[type].USD})
