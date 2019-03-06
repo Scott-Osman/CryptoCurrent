@@ -123,3 +123,13 @@ span.right {
   width:35px;
   height:35px;
 }
+
+/* Test Container */
+.test-container {
+  background: white;
+}
+
+/* Live Container */
+.live-container {
+  background: white;
+}
