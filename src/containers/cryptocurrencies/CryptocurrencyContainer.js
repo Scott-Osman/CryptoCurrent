@@ -30,12 +30,15 @@ render(){
 
       <div className="cryptocurrency-container">
 
-        <Table striped bordered hover variant="dark">
+        <Table striped bordered hover variant="dark" className="cryptocurrency-table">
           <thead>
             <tr>
               <th>Position</th>
+              <th>Logo</th>
               <th>Name</th>
               <th>Coin Name</th>
+              <th>Total Supply</th>
+              <th>Total Mined</th>
             </tr>
           </thead>
           <CryptocurrencyList cryptocurrencies = {this.state.cryptocurrencies}/>
