@@ -7,7 +7,7 @@ const NavBar = (props) => {
     <div className="navbar">
 
       <header className="app-header">
-        <h1>CryptoCurrent</h1>
+        <Link to="/"><h1>CryptoCurrent</h1></Link>
 
         <div className="navbar-links">
 
@@ -30,6 +30,7 @@ const NavBar = (props) => {
             </li>
 
           </ul>
+
         </div>
       </header>
 
