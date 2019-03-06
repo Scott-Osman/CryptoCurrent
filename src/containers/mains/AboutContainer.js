@@ -10,13 +10,17 @@ class AboutContainer extends Component{
 
   render(){
     return(
-      <div class="top-div">
-        <div class="about_title_container">
-          <h1>About</h1>
+      <div className="top-div">
+        
+        <div className="about-container">
+          <div className="about-container-title">
+            <h1>About</h1>
+          </div>
+          <div className="about-container-details">
+            <p>CryptoCurrent is a Cryptocurrency tracking application which utilises the CryptoCompare API.</p>
+          </div>
         </div>
-        <div class="details_container">
-          <p>CryptoCurrent is a Cryptocurrency tracking application which utilises the CryptoCompare API.</p>
-        </div>
+
       </div>
     )
   }

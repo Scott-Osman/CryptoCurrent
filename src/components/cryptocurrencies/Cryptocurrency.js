@@ -8,9 +8,9 @@ const Cryptocurrency = (props) => {
 
   return (
     <tr>
-      <td className="cryptocurrency-component">{props.cryptocurrency.SortOrder}</td>
-      <td className="cryptocurrency-component"><Link to={"/cryptocurrencies/" + props.cryptocurrency.Name}>{props.cryptocurrency.Name}</Link></td>
-      <td className="cryptocurrency-component">{props.cryptocurrency.CoinName}</td>
+      <td className="cryptocurrency-container-component">{props.cryptocurrency.SortOrder}</td>
+      <td className="cryptocurrency-container-component"><Link to={"/cryptocurrencies/" + props.cryptocurrency.Name}>{props.cryptocurrency.Name}</Link></td>
+      <td className="cryptocurrency-container-component">{props.cryptocurrency.CoinName}</td>
     </tr>
   )
 

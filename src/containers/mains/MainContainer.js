@@ -12,13 +12,19 @@ class MainContainer extends Component{
   render(){
     return(
       <div className="top-div">
-        <h1>Welcome</h1>
-        <Link to={"/cryptocurrencies"}>
-        <p>View Cryptocurrencies</p>
+        <div className="main-container">
+
+          <h1>Welcome</h1>
+
+          <Link to={"/cryptocurrencies"}>
+          <p>View Cryptocurrencies</p>
+        </Link>
+
+        <Link to={"/exchanges"}>
+        <p>View Exchanges</p>
       </Link>
-      <Link to={"/exchanges"}>
-      <p>View Exchanges</p>
-    </Link>
+
+    </div>
   </div>
 )
 }

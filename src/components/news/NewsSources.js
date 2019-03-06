@@ -6,8 +6,8 @@ const NewsSource = (props) => {
   }
 
   return (
-    <div className="item-component">
-      <p>{props.news.name} {props.news.lang}</p>
+    <div className="news-sources-component">
+      <p>{props.news.name} ({props.news.lang})</p>
       <img src={props.news.img} alt=""/>
     </div>
   )

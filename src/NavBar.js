@@ -7,6 +7,7 @@ const NavBar = (props) => {
     <div className="navbar">
 
       <header className="app-header">
+        <img src={require('./images/Logo.png')} alt=""/>
         <Link to="/"><h1>CryptoCurrent</h1></Link>
 
         <div className="navbar-links">
