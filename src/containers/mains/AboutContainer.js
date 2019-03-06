@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import axios from 'axios';
 
 class AboutContainer extends Component{
   constructor(props){
@@ -11,7 +10,7 @@ class AboutContainer extends Component{
   render(){
     return(
       <div className="top-div">
-        
+
         <div className="about-container">
           <div className="about-container-title">
             <h1>About</h1>

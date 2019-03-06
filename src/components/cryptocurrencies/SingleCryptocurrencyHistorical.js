@@ -9,7 +9,7 @@ const SingleCryptocurrencyHistorical = (props) => {
   return (
     <div>
       <p>Time: {props.historical.time}</p>
-      <p>Close: {props.historical.close}</p>
+      <p>Close: {}</p>
     </div>
   )
 
