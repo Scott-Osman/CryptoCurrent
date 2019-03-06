@@ -34,7 +34,7 @@ render(){
           <thead>
             <tr>
               <th>Position</th>
-              <th>Logo</th>
+              <th></th>
               <th>Name</th>
               <th>Coin Name</th>
               <th>Total Supply</th>

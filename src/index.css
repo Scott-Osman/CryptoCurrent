@@ -112,6 +112,13 @@ span.right {
   float: right;
 }
 
+/* Cryptocurrency Table */
+
+.cryptocurrency-table {
+  margin: auto;
+  width: 50% !important;
+}
+
 .cryptocurrency-table tbody tr td img{
   width:35px;
   height:35px;
