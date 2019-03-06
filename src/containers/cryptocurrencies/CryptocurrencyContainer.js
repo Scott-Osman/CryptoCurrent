@@ -27,17 +27,23 @@ class CryptocurrencyContainer extends Component{
 render(){
   return(
     <div className="top-div">
-    <Table striped bordered hover variant="dark">
-      <thead>
-        <tr>
-          <th>Position</th>
-          <th>Name</th>
-          <th>Coin Name</th>
-        </tr>
-      </thead>
-        <CryptocurrencyList cryptocurrencies = {this.state.cryptocurrencies}/>
-    </Table>
-  </div>
+
+      <div className="cryptocurrency-container">
+
+        <Table striped bordered hover variant="dark">
+          <thead>
+            <tr>
+              <th>Position</th>
+              <th>Name</th>
+              <th>Coin Name</th>
+            </tr>
+          </thead>
+          <CryptocurrencyList cryptocurrencies = {this.state.cryptocurrencies}/>
+        </Table>
+
+      </div>
+
+    </div>
   )
 }
 

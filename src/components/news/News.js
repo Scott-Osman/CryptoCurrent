@@ -7,13 +7,11 @@ const New = (props) => {
   }
 
   return (
-    <div className="item-component">
-      <Link to={props.item.url}>
-        {props.item.title}
-      </Link>
+    <div className="news-component">
+      <a href={props.item.url}><h1>{props.item.title}</h1></a>
       <p><img src={props.item.imageurl} alt=""/></p>
       <p>{props.item.body}</p>
-      <p>{props.item.source} {props.item.lang}</p>
+      <p><strong>{props.item.source} ({props.item.lang})</strong></p>
       <p>{props.item.tags}</p>
     </div>
   )
