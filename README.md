@@ -35,4 +35,4 @@ Status
 
 Tech Stack
 
-Javascript, HTML and CSS
+- Javascript, HTML and CSS
