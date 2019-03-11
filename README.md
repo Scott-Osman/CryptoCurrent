@@ -1,4 +1,4 @@
-#Solo Project: CryptoCurrent
+# Solo Project: CryptoCurrent
 
 - Time Allowance: 1st March, 2019 - 6th March, 2019
 
