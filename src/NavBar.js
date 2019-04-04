@@ -26,10 +26,6 @@ const NavBar = (props) => {
               <Link to="/news">News</Link>
             </li>
 
-            <li className="navLink">
-              <Link to="/test">Test</Link>
-            </li>
-
           </ul>
 
         </div>

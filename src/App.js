@@ -17,8 +17,6 @@ import ExchangeContainer from './containers/exchanges/ExchangeContainer.js'
 import NewsContainer from './containers/news/NewsContainer.js'
 import NewsSourcesContainer from './containers/news/NewsSourcesContainer.js'
 
-import TestContainer from './containers/tests/TestContainer.js'
-
 import Footer from './Footer.js'
 
 class App extends Component {
@@ -58,9 +56,6 @@ class App extends Component {
             <Route exact path = '/news' component = {NewsContainer}/>
 
             <Route exact path = '/news/sources' component = {NewsSourcesContainer}/>
-
-            <Route exact path = '/test' component = {TestContainer}/>
-
 
           </Switch>
 
