@@ -39,4 +39,4 @@
 - Project Incomplete
 
 ## Tech Stack
-- Javascript, HTML and CSS
+- Javascript, HTML5 and CSS3
