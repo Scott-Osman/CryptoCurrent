@@ -1,8 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 
-const NavBar = (props) => {
-  return (
+const NavBar = (props) => (
 
     <div className="navbar">
 
@@ -31,10 +30,8 @@ const NavBar = (props) => {
         </div>
       </header>
 
-
-
     </div>
   )
-}
+
 
 export default NavBar;

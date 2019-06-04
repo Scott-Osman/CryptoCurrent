@@ -3,19 +3,19 @@ import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
 import NavBar from './NavBar.js'
 
-import MainContainer from './containers/mains/MainContainer.js'
-import AboutContainer from './containers/mains/AboutContainer.js'
+import MainContainer from './containers/Main'
+import AboutContainer from './containers/About'
 
-import LivesContainer from './containers/lives/LivesContainer.js'
+import LivesContainer from './containers/Live'
 
-import CryptocurrencyContainer from './containers/cryptocurrencies/CryptocurrencyContainer.js'
-import SingleCryptocurrencyContainer from './containers/cryptocurrencies/SingleCryptocurrencyContainer.js'
-import SingleCryptocurrencyHistoricalContainer from './containers/cryptocurrencies/SingleCryptocurrencyHistoricalContainer.js'
+import CryptocurrencyContainer from './containers/Cryptocurrency'
+import SingleCryptocurrencyContainer from './containers/SingleCryptocurrency'
+import SingleCryptocurrencyHistoricalContainer from './containers/SingleCryptocurrencyHistorical'
 
-import ExchangeContainer from './containers/exchanges/ExchangeContainer.js'
+import ExchangeContainer from './containers/Exchange'
 
-import NewsContainer from './containers/news/NewsContainer.js'
-import NewsSourcesContainer from './containers/news/NewsSourcesContainer.js'
+import NewsContainer from './containers/News'
+import NewsSourcesContainer from './containers/NewsSources'
 
 import Footer from './Footer.js'
 
