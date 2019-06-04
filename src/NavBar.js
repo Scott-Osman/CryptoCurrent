@@ -1,7 +1,12 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 
+<<<<<<< HEAD
 const NavBar = (props) => (
+=======
+const NavBar = (props) => {
+  return (
+>>>>>>> a6cf9fa6da274e37c48f02905f670cce4f4cbb59
 
     <div className="navbar">
 
@@ -25,13 +30,28 @@ const NavBar = (props) => (
               <Link to="/news">News</Link>
             </li>
 
+<<<<<<< HEAD
+=======
+            <li className="navLink">
+              <Link to="/test">Test</Link>
+            </li>
+
+>>>>>>> a6cf9fa6da274e37c48f02905f670cce4f4cbb59
           </ul>
 
         </div>
       </header>
 
+<<<<<<< HEAD
     </div>
   )
 
+=======
+
+
+    </div>
+  )
+}
+>>>>>>> a6cf9fa6da274e37c48f02905f670cce4f4cbb59
 
 export default NavBar;
